@@ -1,7 +1,7 @@
 # genome_assembly_workshop
 
 
-# `using the bioinformatic cluster training course`
+# `genome_assembly_workshop: using the bioinformatic cluster`
 This repository is for an introduction to genome_assembly_workshop
 
 # course :

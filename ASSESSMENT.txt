@@ -1,0 +1,25 @@
+##############################
+# genome_assembly_workshop
+
+NAME: 
+
+1) What was the best kmer value for the Velvet assembly? What was the N50 and number of scaffolds?
+
+
+2) Why was this value the best compared to other extremely high or low values?
+
+
+
+3) What was the best tools for this assembly?
+
+
+4) Why?
+
+
+5) Would this tool be suitable for a eukayotic organism, if yes, why, if not, why?
+
+
+6) What did we assemble?
+
+7) Why is it important to trim the reads?
+

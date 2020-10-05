@@ -19,6 +19,8 @@ NAME:
 
 8) You will have to research this: Why can N50 be a bad measure for genome assembly quality metrics?
 
+9) Research and name at least 5 other genome assembly programs.
+
 Draw a graph of your assembly using Bandage and email this. 
 
 Email the linear and circular pdf of the genome diagram. Which do you prefer and why?

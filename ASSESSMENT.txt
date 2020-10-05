@@ -1,29 +1,30 @@
 ##############################
 # genome_assembly_workshop
-
+ 
 NAME: 
-
+ 
 1) What was the best kmer value for the Velvet assembly? What was the N50 and number of scaffolds?
-
+ 
 2) Why was this value the best compared to other extremely high or low values?
+ 
+3) What was the best tools for this assembly? Why? (Comment: Combined 3 & 4)
+ 
+4) Would this tool be suitable for a eukaryotic organism, if yes, why, if not, why?
+ 
+5) What did we assemble (was was a mistery dataset)? From the header in the spades assembly, what was the rough coverage or reads? 
+From the QC how many reads did we start with? What was the total length of the genome? Can you find some interesting facts about this organism?
 
-3) What was the best tools for this assembly?
+6) Why is it important to trim the reads?
+ 
+7) You will have to research this: Why can N50 be a bad measure for genome assembly quality metrics?
+ 
+8) Research and name at least 5 other genome assembly programs.
+ 
+9) Draw a graph of your assembly using Bandage and upload this on MMS.
+ Email the linear and circular pdf of the genome diagram. Which do you prefer and why?
+ 
+10) Write a short half a page feedback on the workshop and what you have learnt.
 
-4) Why?
+Create one document with your answers and upload it on MMS. Deadline is the 13th October 2020 17:00 BST
 
-5) Would this tool be suitable for a eukaryotic organism, if yes, why, if not, why?
-
-6) What did we assemble?
-
-7) Why is it important to trim the reads?
-
-8) You will have to research this: Why can N50 be a bad measure for genome assembly quality metrics?
-
-9) Research and name at least 5 other genome assembly programs.
-
-Draw a graph of your assembly using Bandage and email this. 
-
-Email the linear and circular pdf of the genome diagram. Which do you prefer and why?
-
-Write a short half a page feedback on the workshop and what you have learnt ....
 

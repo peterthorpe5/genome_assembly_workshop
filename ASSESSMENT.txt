@@ -5,21 +5,23 @@ NAME:
 
 1) What was the best kmer value for the Velvet assembly? What was the N50 and number of scaffolds?
 
-
 2) Why was this value the best compared to other extremely high or low values?
-
-
 
 3) What was the best tools for this assembly?
 
-
 4) Why?
 
-
-5) Would this tool be suitable for a eukayotic organism, if yes, why, if not, why?
-
+5) Would this tool be suitable for a eukaryotic organism, if yes, why, if not, why?
 
 6) What did we assemble?
 
 7) Why is it important to trim the reads?
+
+8) You will have to research this: Why can N50 be a bad measure for genome assembly quality metrics?
+
+Draw a graph of your assembly using Bandage and email this. 
+
+Email the linear and circular pdf of the genome diagram. Which do you prefer and why?
+
+Write a short half a page feedback on the workshop and what you have learnt ....
 

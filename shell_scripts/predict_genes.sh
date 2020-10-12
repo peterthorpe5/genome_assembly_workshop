@@ -20,6 +20,6 @@ cd $HOME/genome_assembly_workshop
 # https://github.com/tseemann/prokka
 
 # must be full path here
-prokka --cpus 8 $HOME/genome_assembly_workshop /directory_trimmed/contigs.fa
+prokka --cpus 8 $HOME/genome_assembly_workshop/directory_trimmed/contigs.fa
 
 

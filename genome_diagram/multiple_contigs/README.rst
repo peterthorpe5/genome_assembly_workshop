@@ -21,6 +21,12 @@ Note: you should not need to alter any files. This should just work for you.
 
     USAGE:
     ``perl GFF_to_EMBL.pl   genome.fasta   prokka.gff >   OUT.EMBL``
+    
+    The ``>`` in this example pushes the output to a file, whatever you want it to be called. e.g. ``prokka.embl``
+    
+    Try it wihtout this > : ``perl GFF_to_EMBL.pl   genome.fasta   prokka.gff``
+    
+    It will just print it all to the screen, and then will be lost
 
     real example: ``perl /path_to/GFF_to_EMBL.pl /path_to/scaffolds.fasta PROKKA_123XZY.gff > prokka.embl``
     this example assumes you are in the same directory as the PROKKA_123XZY.gff, otherwise, just add the full path

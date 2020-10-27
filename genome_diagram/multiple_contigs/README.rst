@@ -1,6 +1,6 @@
 # This is a readme to draw the genome diagrams .pdf for all contigs. 
 
-WHY THIS?
+ WHY THIS?
 In the workshop, the script I coded did not allow for more than one cotig in the file. 
 
 This is a long winded fix:

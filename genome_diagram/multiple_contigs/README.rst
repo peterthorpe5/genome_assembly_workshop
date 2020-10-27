@@ -43,7 +43,7 @@ This will output each contig into its own embl file, which can then be used as i
 The ouput is in a folder called ``individual_files``
 
 4) draw the genes (you cannot use the script from the workshop for this. Use the one in this
- " fix directory"  ``Genome_diagram_all_contigs.py``):
+ ``https://github.com/peterthorpe5/genome_assembly_workshop/tree/master/genome_diagram/multiple_contigs/Genome_diagram_all_contigs.py``):
 
 change directory into the "individual_files"
 
@@ -57,3 +57,5 @@ It will go though all the files and ouput .pdfs for you.
 
 ``python Genome_diagram.py``
 
+
+Browse through the results. Enjoy!!!

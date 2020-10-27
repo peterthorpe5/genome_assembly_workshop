@@ -19,7 +19,11 @@ Note: you should not need to alter any files. This should just work for you.
     USAGE:
     ``perl GFF_to_EMBL.pl   genome.fasta   prokka.gff >   OUT.EMBL``
 
-    real example: perl ./GFF_to_EMBL.pl ../scaffolds.fasta PROKKA_10262020.gff > prokka.embl
+    real example: ``perl /path_to/GFF_to_EMBL.pl /path_to/scaffolds.fasta PROKKA_123XZY.gff > prokka.embl``
+    this example assumes you are in the same directory as the PROKKA_123XZY.gff, otherwise, just add the full path
+
+
+Now make sure the ``prokka.embl`` files is not emtpy
 
 3) split this embl file up. 
 

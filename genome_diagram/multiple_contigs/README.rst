@@ -9,13 +9,15 @@ This is a long winded fix:
 
 # first you have to convert the GFF to EMBL. This is not straight forward. 
 
-1)  copy this perl script GFF_to_EMBL.pl and the perl module file Seq.pm to the folder with the prokka
-output is generated. (you can use paths if you are confident enough, so then you can keep it where you want 
+1)  copy this perl script ``GFF_to_EMBL.pl`` and the perl module file ``Seq.pm`` to the folder where the prokka
+output is generated (gene predictions). (you can use paths if you are confident enough, so then you can keep it where you want 
 - this is better in the long run!)
 
-2) convert: (if is complains about a missing module, copy this to where you are working: Seq.pm)
+2) convert: (if is complains about a missing module, copy this file to where you are working: ``Seq.pm``)
+Note: you should not need to alter any files. This should just work for you. 
 
-    perl ./GFF_to_EMBL.pl genome.fasta prokka.gff > OUT.EMBL
+    USAGE:
+    ``perl GFF_to_EMBL.pl   genome.fasta   prokka.gff >   OUT.EMBL``
 
     real example: perl ./GFF_to_EMBL.pl ../scaffolds.fasta PROKKA_10262020.gff > prokka.embl
 

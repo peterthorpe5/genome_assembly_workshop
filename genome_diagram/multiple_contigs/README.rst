@@ -61,7 +61,9 @@ change directory into the "individual_files"
 we need a different python set up for this, the python2.7 script you used above was coded 10 years ago :)
 
 ``conda activate python36 ``
+
 (copy the ``Genome_diagram_all_contigs.py`` file to the individual_files directory to run it). 
+
 It will go though all the files and ouput .pdfs for you. 
 
 ``python Genome_diagram.py``

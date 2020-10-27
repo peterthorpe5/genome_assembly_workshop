@@ -13,6 +13,9 @@ This is a long winded fix:
 output is generated (gene predictions). (you can use paths if you are confident enough, so then you can keep it where you want 
 - this is better in the long run!)
 
+Therefore the ``GFF_to_EMBL.pl`` and the ``Seq.pm`` need to be in the same directory (folder) to work. 
+It is easiest to have this in the same directory and your genome.fasta and prokka.gff
+
 2) convert: (if is complains about a missing module, copy this file to where you are working: ``Seq.pm``)
 Note: you should not need to alter any files. This should just work for you. 
 

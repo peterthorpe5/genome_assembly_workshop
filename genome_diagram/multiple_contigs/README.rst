@@ -24,27 +24,36 @@ Note: you should not need to alter any files. This should just work for you.
 
 
 Now make sure the ``prokka.embl`` files is not emtpy
+(Perl is another coding language) -  look at the file to introduce yourself to another different syntax. 
 
-3) split this embl file up. 
+3) split this embl file up: We need to create a .embl file for each contig.. 
+If you want to run this like the example below, make sure the ``split_up_EMBLfile_individual_files.py`` is in the same directory as your
+outputted ``prokka.embl`` - which you have checked is not empty. 
 
     # Make sure you have the software ready to use (note dot space):
-    . /shelf/apps/pjt6/conda/etc/profile.d/conda.sh
+    ``. /shelf/apps/pjt6/conda/etc/profile.d/conda.sh``
 
-    conda activate python27
+    ``conda activate python27``
+    
+    USAGE: python split_up_EMBLfile_individual_files.py prokka.embl prefix_any_name
 
-    python split_up_EMBLfile_individual_files.py   prokka.embl  unknown
+    ``python split_up_EMBLfile_individual_files.py   prokka.embl  unknown``
 
 This will output each contig into its own embl file, which can then be used as input for drawing. 
-The ouput is in a folder called "individual_files"
+The ouput is in a folder called ``individual_files``
 
 4) draw the genes (you cannot use the script from the workshop for this. Use the one in this
- " fix directory"):
+ " fix directory"  ``Genome_diagram_all_contigs.py``):
 
 change directory into the "individual_files"
 
-conda activate python36 
-(copy the Genome_diagram.py file to this directory to run it). 
+    ``cd individual_files``
+
+we need a different python set up for this, the python2.7 script you used above was coded 10 years ago :)
+
+``conda activate python36 ``
+(copy the ``Genome_diagram_all_contigs.py`` file to the individual_files directory to run it). 
 It will go though all the files and ouput .pdfs for you. 
 
-python Genome_diagram.py
+``python Genome_diagram.py``
 

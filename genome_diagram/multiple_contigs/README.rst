@@ -1,14 +1,15 @@
-# This is a readme to draw the genome diagrams .pdf for all contigs. 
 
+READme: This is a readme to draw the genome diagrams .pdf for all contigs. 
+==========================================================================
  WHY THIS?
-In the workshop, the script I coded did not allow for more than one cotig in the file. 
+In the workshop, the script I coded did not allow for more than one contig in the file. 
 
 This is a long winded fix:
 
 
 # first you have to convert the GFF to EMBL. This is not straight forward. 
 
-1) copy this perl script GFF_to_EMBL.pl and the perl module file Seq.pm to the folder with the prokka
+1)  copy this perl script GFF_to_EMBL.pl and the perl module file Seq.pm to the folder with the prokka
 output is generated. (you can use paths if you are confident enough, so then you can keep it where you want 
 - this is better in the long run!)
 

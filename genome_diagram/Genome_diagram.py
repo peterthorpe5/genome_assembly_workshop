@@ -63,11 +63,12 @@ def squash_exons(feature):
                       qualifiers=feature.qualifiers)
 
 
-def draw_me_something_nice (infile, outfile, outfile2 = None):
+def draw_me_something_nice (infile, outfile, seq_record, outfile2 = None):
     """function to draw genome diagrams by looping over
     a load of gbk files in a folder>>> this is supposed to add
     effectors of interest on as coloured items"""
-    genbank_entry = SeqIO.read(open(infile), "genbank")
+    # genbank_entry = SeqIO.read(open(infile), "genbank")
+    genbank_entry = seq_record
     gdd = Diagram('Test Diagram')
     #Add a track of features,
     gdt_features = gdd.new_track(1, greytrack=True,
@@ -148,12 +149,42 @@ def draw_me_something_nice (infile, outfile, outfile2 = None):
     gdd.write(out2, 'PDF')
 
 
+def alter_gb_file(infile):
+    """function to reduce the contig names"""
+    f_in = open(infile, "r")
+    f_out = open("temp_name_change.gb", "w")
+    for line in f_in:
+        if line.startswith("LOCUS"):
+            elements = line.split()
+            contig = elements[1]
+            contig_new = contig.split("_len")[0]
+            length = contig.split("_")[3]
+            contig_new = contig_new + "                    " + length
+            line = line.replace(contig, contig_new)
+            date = elements[-1]
+            #if "OCT" in date or "NOV" in date:
+                #line = line.replace(date, "")
+                #line = line.rstrip() + "\n"
+            line = line.replace(" bp   DNA linear",
+                                " bp    DNA     linear ")
+            f_out.write(line)
+        else:
+            f_out.write(line)
+    f_in.close()
+    f_out.close()
+
 ###############################################################################
 
 for filename in os.listdir("."):
     if not filename.endswith(".gbk") : continue
-    infile = filename
-    outfile = filename.split(".gbk")[0] + ".pdf"
-    draw_me_something_nice (infile, outfile)
+    alter_gb_file(filename)
+    SeqIO.convert("temp_name_change.gb", 'gb',
+                  'temp.gb', 'gb')
+    #for seq_record in SeqIO.parse("temp.gb", "genbank"):
+        ##infile = seq_record.id
+        #outfile = seq_record.id + ".pdf"
+        # outfile = filename.split(".gbk")[0] + ".pdf"
+        # draw_me_something_nice (infile, outfile, seq_record)
+       # print(seq_record.id)
 
 

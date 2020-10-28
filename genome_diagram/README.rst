@@ -20,7 +20,7 @@ This is a long winded fix:
 
     USAGE:
     
-    ``python rewrite_as_fasta.py  -i genome.fasta   -o prokka.gff``
+    ``python rewrite_as_fasta.py  -i genome.fasta   -o out.fasta``
     
     real example: 
     

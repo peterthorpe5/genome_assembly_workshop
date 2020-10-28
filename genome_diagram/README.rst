@@ -13,14 +13,18 @@ This is a long winded fix:
 1)  copy this python script ``rewrite_as_fasta.py``  to the folder where the genome assembly is outputted. 
 
     # Make sure you have the software ready to use (note dot space):
+    
     ``. /shelf/apps/pjt6/conda/etc/profile.d/conda.sh``
 
     ``conda activate python36``
 
     USAGE:
+    
     ``python rewrite_as_fasta.py  -i genome.fasta   -o prokka.gff``
     
-    real example: `` python rewrite_as_fasta.py -i scaffolds.fasta -o fixed.fasta``
+    real example: 
+    
+    `` python rewrite_as_fasta.py -i scaffolds.fasta -o fixed.fasta``
 
 
 this will rename all the contigs for you. 
@@ -39,6 +43,8 @@ Now repredict the genes.
     ``cd PROKKA_XYZ/``
     
  copy the python file: Genome_diagram_multi_contigs.py
+ 
+ https://github.com/peterthorpe5/genome_assembly_workshop/blob/master/genome_diagram/Genome_diagram_multi_contigs.py
  
  run it
  

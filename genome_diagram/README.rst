@@ -35,8 +35,11 @@ Now repredict the genes.
 
     ``conda activate prokka``
 
-    ``prokka --cpus 8 /path_to_/fixed.fasta``
+    ``prokka --cpus 8 /FULL_path_to_/fixed.fasta``
 
+if you already have an output directory, this may cause a clash, so you may need to :
+
+    ``prokka /FULL_path_to_/fixed.fasta --outdir prokka_newfix --prefix new_fix``
 
 3) change directory into the PROKKA ouptu:
 
@@ -47,5 +50,8 @@ Now repredict the genes.
  https://github.com/peterthorpe5/genome_assembly_workshop/blob/master/genome_diagram/Genome_diagram_multi_contigs.py
  
  run it
+ 
+     ``conda activate python36``
+     
  
     ``python Genome_diagram_multi_contigs.py``

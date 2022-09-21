@@ -1,0 +1,14 @@
+#!/bin/bash -l
+#SBATCH -J example   #jobname
+#SBATCH -N 1     #node
+#SBATCH --ntasks-per-node=1
+#SBATCH --threads-per-core=2
+#SBATCH -p bigmem
+#SBATCH --mem=1GB
+
+cd ~/scratch/bioinf/${USER}/genome_assembly_workshop/
+echo "I am running the script"
+echo "tell me someting good"
+
+
+

@@ -61,6 +61,7 @@ velvetg directory_trimmed
 # lets see if the qc reads assembled better than the raw reads
 perl ~/genome_assembly_workshop/shell_scripts/scaffold_stats.pl -f ./directory_raw/contigs.fa ./directory_trimmed/contigs.fa > assembly.stats
 
+
 more assembly.stats
 
 ####################################################################

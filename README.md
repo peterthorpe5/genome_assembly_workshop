@@ -1,5 +1,9 @@
 # genome_assembly_workshop
 
+# Practical 3: Genetics Practical
+GD5302: Digital Health Practice
+
+
 
 # `genome_assembly_workshop: using the bioinformatic cluster`
 This repository is for an introduction to genome_assembly_workshop

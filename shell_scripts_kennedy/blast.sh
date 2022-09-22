@@ -7,7 +7,13 @@
 #SBATCH --mem=4GB
 
 
-cd $HOME/genome_assembly_workshop//directory_trimmed
+
+cd ~/scratch/genome_assembly_workshop/directory_trimmed
+
+# activate the software
+export PATH=/gpfs1/scratch/bioinf/BL4273/conda/envs/genome_workshop/bin/:$PATH
+
+
 
 ######################################################################
 # lets use BLAST to try and see what the mistery data set was. 

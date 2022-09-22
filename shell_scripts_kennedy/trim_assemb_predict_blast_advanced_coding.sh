@@ -7,11 +7,11 @@
 #SBATCH --mem=20GB
 
 
-cp -rv /scratch/bioinf/BL4273/genome_assembly_workshop ~/scratch/bioinf/${USER}
+cp -rv /scratch/bioinf/BL4273/genome_assembly_workshop ~/scratch/
 
 wait
 
-cd ~/scratch/bioinf/${USER}/genome_assembly_workshop/
+cd ~/scratch/genome_assembly_workshop/
 
 # set up some variables
 kmer=127

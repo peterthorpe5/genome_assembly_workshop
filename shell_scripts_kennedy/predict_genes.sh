@@ -1,12 +1,17 @@
-#!/bin/bash
-#$ -V ## pass all environment variables to the job, VERY IMPORTANT
-#$ -N GenePreTraining ## job name
-#$ -S /bin/bash ## shell where it will run this job
-####$ -j y ## join error output to normal output
-#$ -cwd ## Execute the job from the current working directory
+#!/bin/bash -l
+#SBATCH -J all   #jobname
+#SBATCH -N 1     #node
+#SBATCH --ntasks-per-node=4
+#SBATCH --threads-per-core=2
+#SBATCH -p bigmem
+#SBATCH --mem=10GB
 
 
-cd $HOME/genome_assembly_workshop 
+cd ~/scratch/genome_assembly_workshop/
+
+
+# activate the software
+export PATH=/gpfs1/scratch/bioinf/BL4273/conda/envs/genome_workshop/bin/:$PATH
 
 ######################################################################
 #  use prokka to predict genes
@@ -20,6 +25,6 @@ cd $HOME/genome_assembly_workshop
 # https://github.com/tseemann/prokka
 
 # must be full path here
-prokka --cpus 8 $HOME/genome_assembly_workshop/directory_trimmed/contigs.fa
+prokka --cpus 4 ~/scratch/genome_assembly_workshop/directory_trimmed/contigs.fa
 
 

@@ -15,8 +15,6 @@ export PATH=/gpfs1/scratch/bioinf/BL4273/conda/envs/genome_workshop/bin/:$PATH
 # set up some variables
 threads=4
 
-# activate the software
-export PATH=/gpfs1/scratch/bioinf/BL4273/conda/envs/genome_workshop/bin/:$PATH
 
 
 spades.py -1 ./reads/ERR861370_1.fastq.gz \

@@ -6,7 +6,7 @@
 #SBATCH -p bigmem
 #SBATCH --mem=1GB
 
-cd ~/scratch/bioinf/${USER}/genome_assembly_workshop/
+cd ~/scratch/genome_assembly_workshop/
 echo "I am running the script"
 echo "tell me someting good"
 

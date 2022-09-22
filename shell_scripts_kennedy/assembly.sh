@@ -3,7 +3,7 @@
 #SBATCH -N 1     #node
 #SBATCH --ntasks-per-node=1
 #SBATCH -p debug
-#SBATCH --mem=4GB
+#SBATCH --mem=12GB
 
 
 # this line takes us into the correct directory where the data is

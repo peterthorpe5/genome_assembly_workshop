@@ -1,20 +1,22 @@
 #!/bin/bash -l
 #SBATCH -J all   #jobname
 #SBATCH -N 1     #node
-#SBATCH --ntasks-per-node=1
-#SBATCH --threads-per-core=2
+#SBATCH --ntasks-per-node=2
 #SBATCH -p debug
-#SBATCH --mem=4GB
+#SBATCH --mem=10GB
 
 
-cp -rv /shelf/Computational_Genomics/genome_assembly_workshop/ ~/
-wait
+cp -rv /scratch/bioinf/BL4273/genome_assembly_workshop ~/scratch/
 
-cd $HOME/genome_assembly_workshop/
+
+cd ~/scratch/genome_assembly_workshop/
+
+# activate the software
+export PATH=/gpfs1/scratch/bioinf/BL4273/conda/envs/genome_workshop/bin/:$PATH
 
 # set up some variables
 kmer=127
-threads=6
+threads=2
 trim_path=/shelf/training/Trimmomatic-0.38/
 
 . /shelf/apps/pjt6/conda/etc/profile.d/conda.sh 

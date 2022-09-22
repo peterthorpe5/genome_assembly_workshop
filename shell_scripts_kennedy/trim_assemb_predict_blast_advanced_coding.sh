@@ -1,8 +1,7 @@
 #!/bin/bash -l
 #SBATCH -J all   #jobname
 #SBATCH -N 1     #node
-#SBATCH --ntasks-per-node=4
-#SBATCH --threads-per-core=2
+#SBATCH --ntasks-per-node=2
 #SBATCH -p debug
 #SBATCH --mem=20GB
 
@@ -15,7 +14,7 @@ cd ~/scratch/genome_assembly_workshop/
 
 # set up some variables
 kmer=127
-threads=4
+threads=2
 
 # activate the software
 export PATH=/gpfs1/scratch/bioinf/BL4273/conda/envs/genome_workshop/bin/:$PATH

@@ -2,13 +2,12 @@
 #SBATCH -J trimmo   #jobname
 #SBATCH -N 1     #node
 #SBATCH --ntasks-per-node=1
-#SBATCH --threads-per-core=2
 #SBATCH -p debug
 #SBATCH --mem=4GB
 
 
 # this line takes us into the correct directory where the data is
-cd ~/scratch/bioinf/${USER}/genome_assembly_workshop/
+cd ~/scratch/genome_assembly_workshop/
 
 # activate the software
 export PATH=/gpfs1/scratch/bioinf/BL4273/conda/envs/genome_workshop/bin/:$PATH

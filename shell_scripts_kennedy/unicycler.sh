@@ -2,12 +2,11 @@
 #SBATCH -J unicycle   #jobname
 #SBATCH -N 1     #node
 #SBATCH --ntasks-per-node=4
-#SBATCH --threads-per-core=2
 #SBATCH -p debug
 #SBATCH --mem=20GB
 
 # https://github.com/rrwick/Unicycler#quick-usage
-cd ~/scratch/bioinf/${USER}/genome_assembly_workshop/
+cd ~/scratch/genome_assembly_workshop/
 
 # to activate the software, paste the following in your terminal:
 # activate the software

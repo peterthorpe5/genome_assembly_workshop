@@ -2,7 +2,6 @@
 #SBATCH -J fastqc   #jobname
 #SBATCH -N 1     #node
 #SBATCH --ntasks-per-node=1
-#SBATCH --threads-per-core=2
 #SBATCH -p debug
 #SBATCH --mem=4GB
 

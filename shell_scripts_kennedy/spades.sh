@@ -3,7 +3,7 @@
 #SBATCH -N 1     #node
 #SBATCH --ntasks-per-node=4
 #SBATCH --threads-per-core=2
-#SBATCH -p bigmem
+#SBATCH -p singlenode
 #SBATCH --mem=20GB
 
 cd ~/scratch/bioinf/${USER}/genome_assembly_workshop/

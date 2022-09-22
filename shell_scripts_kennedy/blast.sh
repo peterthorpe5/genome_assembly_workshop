@@ -3,7 +3,7 @@
 #SBATCH -N 1     #node
 #SBATCH --ntasks-per-node=2
 #SBATCH --threads-per-core=2
-#SBATCH -p bigmem
+#SBATCH -p singlenode
 #SBATCH --mem=4GB
 
 

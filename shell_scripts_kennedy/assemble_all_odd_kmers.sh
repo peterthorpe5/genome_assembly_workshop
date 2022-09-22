@@ -1,11 +1,10 @@
-#!/bin/bash
-#$ -V ## pass all environment variables to the job, VERY IMPORTANT
-#$ -N pipeline ## job name
-#$ -S /bin/bash ## shell where it will run this job
-#$ -j y ## join error output to normal output
-#$ -cwd ## Execute the job from the current working directory
-#$ -m e
-#$ -M ${USER}@st-andrews.ac.uk
+#!/bin/bash -l
+#SBATCH -J all   #jobname
+#SBATCH -N 1     #node
+#SBATCH --ntasks-per-node=1
+#SBATCH --threads-per-core=2
+#SBATCH -p singlenode
+#SBATCH --mem=4GB
 
 
 cp -rv /shelf/Computational_Genomics/genome_assembly_workshop/ ~/

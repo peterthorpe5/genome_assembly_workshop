@@ -15,7 +15,7 @@ export PATH=/gpfs1/scratch/bioinf/BL4273/conda/envs/genome_workshop/bin/:$PATH
 
 # this line run fastqc on a data file.
 # * is a wild card to match anything, for us R1 and R2. 
-fastqc ~/scratch/bioinf/${USER}/genome_assembly_workshop/reads/subsampled_R*.fastq.gz
+fastqc ~/scratch/genome_assembly_workshop/reads/subsampled_R*.fastq.gz
 echo "finished"
 
 

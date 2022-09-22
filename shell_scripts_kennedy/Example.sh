@@ -3,7 +3,7 @@
 #SBATCH -N 1     #node
 #SBATCH --ntasks-per-node=1
 #SBATCH --threads-per-core=2
-#SBATCH -p singlenode
+#SBATCH -p debug
 #SBATCH --mem=1GB
 
 cd ~/scratch/genome_assembly_workshop/

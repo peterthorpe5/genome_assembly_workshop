@@ -3,7 +3,7 @@
 #SBATCH -N 1     #node
 #SBATCH --ntasks-per-node=2
 #SBATCH -p debug
-#SBATCH --mem=20GB
+#SBATCH --mem=30GB
 
 # https://github.com/rrwick/Unicycler#quick-usage
 cd ~/scratch/genome_assembly_workshop/
